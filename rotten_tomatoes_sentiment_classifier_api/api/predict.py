@@ -8,6 +8,7 @@ api = Namespace('predict', description='Prediction Details')
 message = api.model('Message', model_message)
 
 predictor = Predictor()
+predictor._initialize_model()
 graph = tf.get_default_graph()
 
 
